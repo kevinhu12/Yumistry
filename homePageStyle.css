@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 /* Header */
 .header {
     background-color: rgb(186, 186, 243);
@@ -40,4 +43,60 @@ li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* Column Layout */
+.leftColumn {   
+    float: left;
+    width: 25%;
+}
+  
+.rightColumn {
+    float: left;
+    width: 75%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+.placeholderImage {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.post {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .li a {
+        float: none;
+        width: 100%;
+    }
 }
