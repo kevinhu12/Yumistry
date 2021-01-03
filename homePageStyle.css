@@ -1,7 +1,9 @@
 * {
     box-sizing: border-box;
 }
-/* Header */
+
+
+/* Headers */
 .header {
     background-color: rgb(186, 186, 243);
     text-align: center;
@@ -35,16 +37,6 @@ li a:hover {
     background-color: #111;
 }
 
-/* Parallax Scroll Effect */
-.parallax {
-    background-image: url("trialRose.jpg");
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 /* Column Layout */
 .leftColumn {   
     float: left;
@@ -66,10 +58,17 @@ li a:hover {
     padding: 20px;
 }
 
-.post {
+.post1 {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
+}
+
+.post2 {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .foodForThought {
@@ -80,6 +79,7 @@ li a:hover {
     height: 500px;
     border-style:solid;
     border-color:red;
+    border-radius: 25px;
 }
 
 
@@ -111,3 +111,43 @@ li a:hover {
         width: 100%;
     }
 }
+
+/* Scroll Effect */
+body {
+    background: linear-gradient(to bottom, #B721FF, #2AF598, #FEC051, #FEE140, #FA709A);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/*
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 10px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: blue;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darkblue;
+}
+
+/*
+body:before {
+    content:'';
+    position: fixed;
+    top: 0;
+    bottom:0;
+    width:100%;
+    z-index:-1;
+    background:linear-gradient(to right bottom, rgba(255,255,255,0.2), #21D4FD 75%);
+}
+*/
