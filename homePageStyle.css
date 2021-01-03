@@ -1,153 +1,96 @@
-* {
-    box-sizing: border-box;
+html {
+    scroll-behavior: smooth;
 }
-
-
-/* Headers */
-.header {
-    background-color: rgb(186, 186, 243);
-    text-align: center;
-    padding: 0.5%;
-}
-
-
-/* Navbar */
-ul {
-    border-radius:15px;
-    list-style-type: none;
-    margin-top: 0.5%;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-  
-li {
-    float: left;
-}
-  
-li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-  
-li a:hover {
-    background-color: #111;
-}
-
-/* Column Layout */
-.leftColumn {   
-    float: left;
-    width: 30%;
-    padding-right: 10px;
-}
-  
-.rightColumn {
-    float: left;
-    width: 70%;
-    background-color: #f1f1f1;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.placeholderImage {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-}
-
-.post1 {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.post2 {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.foodForThought {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-    overflow: auto;
-    height: 500px;
-    border-style:solid;
-    border-color:red;
-    border-radius: 25px;
-}
-
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Footer */
-.footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
-}
-
-/* Responsive Layout */
-@media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-        width: 100%;
-        padding: 0;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .li a {
-        float: none;
-        width: 100%;
-    }
-}
-
-/* Scroll Effect */
 body {
-    background: linear-gradient(to bottom, #B721FF, #2AF598, #FEC051, #FEE140, #FA709A);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-image: linear-gradient(45deg, #fe6c5f 50%, #9b0123 100%);
+    color: #fff;
 }
-/*
+body .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+body .title h1 {
+    margin: 0;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+body .title h2 {
+    padding: 2em 4em 2em 1em;
+    font-size: 1rem;
+    border-radius: 0.25em;
+    background-color: #1d1e22;
+    box-shadow: 0px 4px 10px #9b0123;
+}
+body .title h2 span {
+    margin-left: 1.25em;
+}
+.content {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.navbar a:link {
+    text-decoration: none;
+    margin: 0 0.5em;
+    display: flex;
+    width: 200px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    color: #1d1e22;
+    border-radius: 0.25em;
+    background-color: #fff;
+}
 
-/* Scrollbars */
-::-webkit-scrollbar {
-    width: 10px;
-    background: transparent;
+.navbar a:hover {
+    text-decoration: none;
+    margin: 0 0.5em;
+    display: flex;
+    width: 200px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 0.25em;
+    background-color: #1d1e22;
 }
 
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 15px;
+.smooth {
+    scroll-behavior: smooth;
+    overflow: hidden;
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    border: 1px solid #fff;
+    border-radius: 0.25em;
 }
-
-::-webkit-scrollbar-thumb {
-    background: blue;
-    border-radius: 15px;
+.smooth section {
+    display: flex;
+    width: 30vw;
+    min-height: 600px;
+    justify-content: center;
+    align-items: center;
 }
-
-::-webkit-scrollbar-thumb:hover {
-    background: darkblue;
-}
-
-/*
-body:before {
-    content:'';
-    position: fixed;
-    top: 0;
-    bottom:0;
-    width:100%;
-    z-index:-1;
-    background:linear-gradient(to right bottom, rgba(255,255,255,0.2), #21D4FD 75%);
-}
-*/
