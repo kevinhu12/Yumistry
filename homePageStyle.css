@@ -99,14 +99,46 @@ body .title h1 {
 
 /* Food for Thought */
 .note {
-    width: 40vh;
-    height: 40vh;
-    float: left;
+    display:inline-block;
+    width: 34vh;
+    height: 34vh;
+    /*float: left;*/
     margin: 1vw;
     border: 0.1vh solid rgba(0,0,0,0.35);
     box-shadow: 0 0.187em 0.375em rgba(0,0,0,0.35);
     -webkit-box-shadow: 0 0.187em 0.375em rgba(0,0,0,.35);
     -moz-box-shadow: 0 0.187em 0.375em rgba(0,0,0,.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fft {
+    display: block;
+    height: 30vh;
+    width: 30vh;
+    opacity: 1;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.center {
+    height: 33vh;
+    width: 33vh;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s ease;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.note:hover .fft {
+    opacity: 0.25;
+}
+
+.note:hover .center {
+    opacity: 1;
 }
 
 .note p {
@@ -115,11 +147,13 @@ body .title h1 {
 }
 
 .fact1 {
-    transform: rotate(-3deg);
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
     background-color: rgb(252, 66, 66);
 }
+.fact2 {
+    background-color:rgb(250, 247, 92)
+}
+
+
 
 
 
