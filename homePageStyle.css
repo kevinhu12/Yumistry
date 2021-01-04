@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     display: flex;
@@ -9,9 +10,10 @@ body {
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
-    background-image: linear-gradient(45deg, #efe7df 50%, #ae92e6 100%);
+    background-image: linear-gradient(45deg, #efe3e0 50%, #ae92e6 100%);
     color: #fff;
 }
+
 body .title {
     display: flex;
     flex-direction: column;
@@ -19,20 +21,12 @@ body .title {
     align-items: center;
     margin-top: 2.5em;
 }
+
 body .title h1 {
     margin: 0;
     font-size: 10vh;
 }
-body .title h2 {
-    padding: 2em 2em 2em 1em;
-    font-size: 1rem;
-    border-radius: 0.25em;
-    background-color: #1d1e22;
-    box-shadow: 0em 0.25em 0.625em purple;
-}
-body .title h2 span {
-    margin-left: 1.25em;
-}
+
 .content {
     display: flex;
     height: 100vh;
@@ -45,6 +39,8 @@ body .title h2 span {
     justify-content: center;
     align-items: center;
 }
+
+/* Navigation Bar */
 .navbar {
     list-style-type: none;
     margin-bottom: 2vh;
@@ -59,7 +55,7 @@ body .title h2 span {
     height: 6vh;
     justify-content: center;
     align-items: center;
-    color: #1d1e22;
+    color: black;
     font-size: 2.5vh;
     border-radius: 0.25em;
     background-color: #fff;
@@ -75,9 +71,10 @@ body .title h2 span {
     align-items: center;
     color: #fff;
     border-radius: 0.25em;
-    background-color: #1d1e22;
+    background-color: black;
 }
 
+/* Scroll Box */
 .smooth {
     scroll-behavior: smooth;
     overflow: hidden;
@@ -91,22 +88,38 @@ body .title h2 span {
     display: flex;
     width: 95vw;
     min-height: 80vh;
+    /*
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
-/* Responsive Layout */
-/*
-@media screen and (max-width: 800px) {
-    .content {
-        width: 100%;
-        padding: 0;
-    }
+.smooth p {
+    font-size: 3vh;
 }
 
-@media screen and (max-width: 400px) {
-    .navbar a:link, .navbar a:hover {
-        float: none;
-        width: 100%;
-    }
+/* Food for Thought */
+.note {
+    width: 40vh;
+    height: 40vh;
+    float: left;
+    margin: 1vw;
+    border: 0.1vh solid rgba(0,0,0,0.35);
+    box-shadow: 0 0.187em 0.375em rgba(0,0,0,0.35);
+    -webkit-box-shadow: 0 0.187em 0.375em rgba(0,0,0,.35);
+    -moz-box-shadow: 0 0.187em 0.375em rgba(0,0,0,.35);
 }
+
+.note p {
+    padding: 0.5vh 2vh;
+    text-align: center;
+}
+
+.fact1 {
+    transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    background-color: rgb(252, 66, 66);
+}
+
+
+
