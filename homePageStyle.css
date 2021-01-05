@@ -98,6 +98,16 @@ body .title h1 {
 }
 
 /* Food for Thought */
+.fftContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.fftRow {
+    display: flex;
+    flex-direction: row;
+}
+
 .note {
     display: inline-block;
     position: relative;
@@ -124,7 +134,7 @@ body .title h1 {
 
 .center {
     height: 33vh;
-    width: 33vh;
+    width: 16vw;
     opacity: 0;
     position: absolute;
     transition: 0.5s ease;
@@ -146,11 +156,17 @@ body .title h1 {
     text-align: center;
 }
 
-.fact1 {
+.red {
     background-color: rgb(252, 66, 66);
 }
-.fact2 {
+.yellow {
     background-color:rgb(250, 247, 92)
+}
+
+@media screen and (max-width: 800px) {
+    .smooth, .smooth section, .note {
+        width:100%;
+    }
 }
 
 
