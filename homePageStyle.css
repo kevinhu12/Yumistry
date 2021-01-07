@@ -58,6 +58,7 @@ nav ul li:last-child {
 }
 
 nav ul li a {
+    border-radius: 15px;
     color:#002e5b; 
     font-size: 18px; 
     padding: 10px 20px;
@@ -237,7 +238,7 @@ input[type=checkbox], label {
 
 .frontTitle h1 {
     color: blue;
-    font-size: 150px;
+    font-size: 75px;
 }
 
 
