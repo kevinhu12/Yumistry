@@ -147,6 +147,7 @@ input[type=checkbox], label {
         background-color:#002e5b; 
         padding: 0px; 
         z-index: 99;
+        border-radius: 10px;
     }
     nav ul {
         width: auto;
@@ -163,6 +164,13 @@ input[type=checkbox], label {
         padding: 10px 20px; 
         display: block; 
         border-bottom: 1px solid rgba(225,225,225,0.1);
+        border-radius: 0;
+    }
+    nav ul li a:hover {
+        background-image: radial-gradient(white,rgb(213, 173, 247)); 
+        padding: 14px 20px;
+        color:#681bf7; 
+        transition: all 0.5s ease 0s;
     }
     nav ul li a i {
         color:#fde428; 
