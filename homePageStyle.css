@@ -262,14 +262,17 @@ input[type=checkbox], label {
 
 @font-face {
     font-family: titleFont;
-    src: url(title-font.ttf);
+    src: url(InkyDinky.ttf);
 }
 
 .frontTitle h1 {
     color: blue;
-    font-size: 75px;
+    font-size: 100px;
     font-family: titleFont;
-    letter-spacing: 3px;
+}
+
+.frontTitle h1::first-letter {
+    letter-spacing: 2px;
 }
 
 
