@@ -359,15 +359,59 @@ input[type=checkbox], label {
 /* Featured Posts */
 /* Content Container */
 .fpContainer {
-    width: 90%;
+    position: absolute;
+    left: 2.5%;
+    top: 20%;
+    width: 95%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
+}
+
+.fpPost {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
     background-color: blue;
 }
+
+.fpPost h1 {
+    font-size: 24px;
+    color: black;
+}
+
+.fpSide {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+
+.featured {
+    background-color: green;
+}
+
+.postSlides {
+    width: 250px;
+    height: 250px;
+    background-color: pink;
+    float: left;
+}
+
+@media only screen and (max-width: 900px) {
+    .fpContainer {
+        flex-direction: column;
+    }
+
+    .fpPost {
+        width: 100%;
+    }
+
+    .fpSide {
+        width: 100%;
+    }
+}
+
 
 
   
