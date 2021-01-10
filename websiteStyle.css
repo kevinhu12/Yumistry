@@ -1,0 +1,376 @@
+
+/* Overall Website Formatting */ 
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: "Times New Roman";
+    color: white;
+    background-image: linear-gradient(45deg, #efe3e0 50%, #ae92e6 100%);
+    background-attachment: fixed;
+}
+
+
+
+/* Home Page */
+
+/* Navigation Bar */
+/* Formats the top header and the navigation bar in the top right */
+
+/* General Formatting */
+* {
+    text-decoration: none; 
+    list-style: none; 
+    margin: 0px; 
+    padding: 0px; 
+    outline: none;
+}
+
+section {
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0px auto; 
+    display: table; 
+    position: relative;
+}
+
+header {
+    width: 100%;
+    display: table; 
+    margin-bottom: 50px;
+}
+
+/* Tab Layout */
+nav {
+    width: auto; 
+    float: right;
+}
+
+nav ul {
+    display: table; 
+    float: right;
+}
+
+nav ul li {
+    float: right;
+}
+
+nav ul li:last-child {
+    padding-right: 0px;
+}
+
+nav ul li a {
+    border-radius: 15px;
+    color:black; 
+    font-size: 20px; 
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 4px; 
+    display: inline-block; 
+    transition: all 0.5s ease 0s;
+}
+
+nav ul li a:hover {
+    background-image: radial-gradient(white,rgb(213, 173, 247)); 
+    padding: 14px 28px;
+    color:black; 
+    transition: all 0.5s ease 0s;
+
+    /* Shine Effect */
+    -webkit-mask-image: linear-gradient(-75deg, black 30%, rgba(0,0,0,0.6) 50%, black 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 1.5s;
+}
+
+/* Shine Effect */
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+}
+
+nav ul li a:hover i {
+    color:#fde428; 
+    transition: all 0.25s ease 0s;
+}
+
+nav ul li a i {
+    padding-right: 10px; 
+    color:#002e5b; 
+    transition: all 0.5s ease 0s;
+}
+
+/* Menu Toggle (for smaller windows / mobile devices) */
+.toggle-menu ul {
+    display: table; 
+    width: 25px;
+}
+
+.toggle-menu ul li {
+    width: 100%; 
+    height: 3px; 
+    background-color:#002e5b; 
+    margin-bottom: 4px;
+}
+
+.toggle-menu ul li:last-child {
+    margin-bottom: 0px;
+}
+
+input[type=checkbox], label {
+    display: none;
+}
+
+/* Responsive Navigation Bar Layout */
+@media only screen and (max-width: 1440px) {
+    section {
+        max-width: 95%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    header {
+        padding: 20px 0px;
+    }
+    input[type=checkbox] {
+        position: absolute; 
+        top: -9999px; left: -9999px; 
+        background: none;
+    }
+    input[type=checkbox]:fous {
+        background:none;
+    }
+    label {
+        float: right;
+        padding: 8px 0px; 
+        display: inline-block; 
+        cursor: pointer; 
+    }
+    input[type=checkbox]:checked ~ nav {
+        display: block;
+    }
+    nav {
+        display: none; 
+        position: absolute; 
+        right: 0px; 
+        top: 53px; 
+        background-color:#002e5b; 
+        padding: 0px; 
+        z-index: 99;
+        border-radius: 10px;
+    }
+    nav ul {
+        width: auto;
+    }
+    nav ul li {
+        float: none; 
+        padding: 0px; 
+        width: 100%; 
+        display: table;
+    }
+    nav ul li a {
+        color:#FFF; 
+        font-size: 15px; 
+        padding: 10px 20px; 
+        display: block; 
+        border-bottom: 1px solid rgba(225,225,225,0.1);
+        border-radius: 0;
+    }
+    nav ul li a:hover {
+        background-image: none;
+        background-color: #002e5b; 
+        padding: 14px 20px;
+        color:#ffff4f; 
+        transition: all 0.5s ease 0s;
+    }
+    nav ul li a i {
+        color:#fde428; 
+        padding-right: 13px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .content {
+        width:90%;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    h1 {
+        padding: 25px 0px;
+    }
+    h1 span {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    section {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    h1 {
+        font-size: 20px;
+    }
+    label {
+        padding: 5px 0px;
+    }
+    #logo {
+        font-size: 20px;
+    }
+    nav {
+        top: 47px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {
+        padding: 20px 0px;
+    }
+}
+
+/* Additional */
+@media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width:100%;
+    }
+}
+
+/* Home Page */
+
+/* Spacing */
+/* Adds the appropriate spacing on the website to position text in the desired areas */
+.middleSpacing {
+    padding: 30vh;
+    width: 100%;
+}
+
+
+/* Front Page Title */
+.frontTitle {
+    float:left;
+    width:60%;
+    padding:0 20px;
+    position: fixed;
+    bottom: 100px;
+    left: 10px;
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(InkyDinky.ttf);
+}
+
+.frontTitle h1 {
+    color: blue;
+    font-size: 100px;
+    font-family: titleFont;
+}
+
+.frontTitle h1::first-letter {
+    letter-spacing: 2px;
+}
+
+
+
+/* Food for Thought! */
+/* General Layout */
+.fftContainer {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.post {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 0.5px solid rgba(0,0,0,0.4);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.postImage {
+    display: block;
+    width: 175px;
+    height: 175px;
+    opacity: 1;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.post p {
+    height: 170px;
+    margin-top: 20px;
+    width: 180px;
+    opacity: 0;
+    position: absolute;
+    transition: 0.5s ease;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.post p::-webkit-scrollbar {
+    display: none;
+}
+
+.post:hover .postImage {
+    opacity: 0.25;
+}
+
+.post:hover p {
+    opacity: 1;
+}
+
+.red {
+    background-color: rgb(252,66,66);
+}
+
+.yellow {
+    background-color: rgb(250,247,92);
+}
+
+
+
+
+/* Featured Posts */
+/* Content Container */
+.fpContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: blue;
+}
+
+
+  
+
+
+
