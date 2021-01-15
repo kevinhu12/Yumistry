@@ -243,6 +243,10 @@ input[type=checkbox], label {
 .featured {
     background-color: green;
 }
+.featured p {
+    text-indent: 50px;
+    font-size: 18px;
+}
 .postSlideContainer {
     width: 350px;
     height: 350px;
