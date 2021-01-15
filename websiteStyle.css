@@ -400,7 +400,7 @@ input[type=checkbox], label {
 
 /* Tests */
 
-.mySlides {
+.mySlides1, .mySlides2 {
     display: none;
 }
 /* Slideshow container */
