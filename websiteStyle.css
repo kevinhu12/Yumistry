@@ -349,12 +349,34 @@ input[type=checkbox], label {
     background-color: blue;
 }
 .logoContainer {
+    background-color: green;
+}
+.logoContainer img {
     height: 350px;
     width: 400px;
-    background-color: green;
 }
 .descriptionContainer {
     background-color: red;
+}
+
+
+
+/* Coming Soon */
+.peekContainer {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.peekContainer h1 {
+    color: black;
+    font-size: 80px;
+    font-family: titleFont;
 }
 
 
