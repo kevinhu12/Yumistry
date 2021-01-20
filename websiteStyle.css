@@ -203,12 +203,35 @@ input[type=checkbox], label {
 }
 .post:hover p {
     opacity: 1;
+    color: white;
 }
+
 .red {
     background-color: rgb(252,66,66);
 }
 .yellow {
     background-color: rgb(250,247,92);
+}
+.blue {
+    background-color: lightblue;
+}
+.orange {
+    background-color: orange;
+}
+.green {
+    background-color: lightgreen;
+}
+.violet {
+    background-color: violet;
+}
+.brown {
+    background-color: rgba(107, 26, 26, 0.61);
+}
+.navy {
+    background-color: navy;
+}
+.orangered {
+    background-color: orangered;
 }
 
 
