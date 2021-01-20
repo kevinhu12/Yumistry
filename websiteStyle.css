@@ -137,7 +137,7 @@ input[type=checkbox], label {
     src: url(InkyDinky.ttf);
 }
 .frontTitle h1 {
-    color: blue;
+    color: black;
     font-size: 100px;
     font-family: titleFont;
 }
