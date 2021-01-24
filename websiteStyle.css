@@ -374,9 +374,16 @@ input[type=checkbox], label {
     width: 275px;
     height: 250px;
     margin: 0vw 5vw;
+    justify-content: center;
+    align-items: center;
+}
+.choiceContainer h1 {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
 }
 .choiceContainer img:hover {
-    box-shadow: 0px 0px 40px 20px #0ff;
+    box-shadow: 0px 0px 10px 5px #0ff;
     transition: 0.5s ease;
 }
 .backButton {
@@ -431,30 +438,33 @@ input[type=checkbox], label {
 }
 .logoContainer img {
     height: 300px;
-    width: 400px;
+    width: 450px;
 }
 .descriptionContainer {
     background-color: transparent;
+    color: lightslategray;
 }
 .descriptionContainer p {
-    font-size: 20px;
+    font-size: 15px;
     text-indent: 25px;
 }
 
 .descriptionContainer p1 {
-    font-size: 30px;
+    font-size: 20px;
     margin-right: 150px;
     float: right;
 }
 
 .descriptionContainer p2 {
-    font-size: 30px;
+    font-size: 20px;
     float: right;
 }
 
 .descriptionContainer p3 {
-    font-size: 20px;
-    float: right;
+    display: flex;
+    font-size: 22.5px;
+    justify-content: center;
+    align-items: center;
 }
 
 
