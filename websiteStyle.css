@@ -458,6 +458,22 @@ input[type=checkbox], label {
     font-family: titleFont;
 }
 
+.descriptionContainer p {
+    font-size: 20px;
+    text-indent: 25px;
+}
+
+.descriptionContainer p1 {
+    font-size: 30px;
+    margin-right: 150px;
+    float: right;
+}
+
+.descriptionContainer p2 {
+    font-size: 30px;
+    float: right;
+}
+
 
 
 /* Responsive Components */
