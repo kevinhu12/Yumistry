@@ -425,19 +425,37 @@ input[type=checkbox], label {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    background-color: blue;
 }
 .logoContainer {
-    background-color: green;
+    background-color: transparent;
 }
 .logoContainer img {
-    height: 350px;
+    height: 300px;
     width: 400px;
 }
 .descriptionContainer {
-    background-color: red;
+    background-color: transparent;
+}
+.descriptionContainer p {
+    font-size: 20px;
+    text-indent: 25px;
 }
 
+.descriptionContainer p1 {
+    font-size: 30px;
+    margin-right: 150px;
+    float: right;
+}
+
+.descriptionContainer p2 {
+    font-size: 30px;
+    float: right;
+}
+
+.descriptionContainer p3 {
+    font-size: 20px;
+    float: right;
+}
 
 
 /* Coming Soon */
@@ -458,21 +476,7 @@ input[type=checkbox], label {
     font-family: titleFont;
 }
 
-.descriptionContainer p {
-    font-size: 20px;
-    text-indent: 25px;
-}
 
-.descriptionContainer p1 {
-    font-size: 30px;
-    margin-right: 150px;
-    float: right;
-}
-
-.descriptionContainer p2 {
-    font-size: 30px;
-    float: right;
-}
 
 
 
