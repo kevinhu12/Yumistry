@@ -145,6 +145,11 @@ input[type=checkbox], label {
     letter-spacing: 2px;
 }
 
+.frontTitle h3 {
+    color: purple;
+    text-decoration: overline;
+}
+
 
 
 /* Food for Thought! */
@@ -251,6 +256,7 @@ input[type=checkbox], label {
     width: 75%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 35px;
 }
 .fpPost h1 {
     font-size: 24px;
@@ -258,9 +264,21 @@ input[type=checkbox], label {
 }
 .fpSide {
     width: 20%;
+    margin-left: 5%;
     display: flex;
     flex-direction: column;
-    background-color: red;
+}
+.fpSide p {
+    margin: auto;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    border-style: groove;
+    border-color: plum;
+    border-width: 4px;
+    padding: 15px;
 }
 .featured {
     background-color: transparent;
@@ -383,7 +401,7 @@ input[type=checkbox], label {
     padding: 20px;
 }
 .choiceContainer img:hover {
-    box-shadow: 0px 0px 10px 5px #0ff;
+    box-shadow: 0px 0px 10px 5px purple;
     transition: 0.5s ease;
 }
 .backButton {
@@ -627,6 +645,16 @@ input[type=checkbox], label {
 
     .fpPost, .fpSide {
         width: 100%;
+        margin: 0%;
+    }
+
+    .fpSide {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .fpSide p {
+        writing-mode: horizontal-tb;
     }
 
     .aboutContainer {
