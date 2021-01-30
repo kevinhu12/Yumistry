@@ -394,6 +394,7 @@ input[type=checkbox], label {
     margin: 0vw 5vw;
     justify-content: center;
     align-items: center;
+    border-radius: 25px;
 }
 .choiceContainer h1 {
     text-align: center;
@@ -500,8 +501,8 @@ input[type=checkbox], label {
 }
 .peekContainer h1 {
     color: black;
-    font-size: 80px;
-    font-family: titleFont;
+    /*font-size: 80px;
+    font-family: titleFont;*/
 }
 
 
